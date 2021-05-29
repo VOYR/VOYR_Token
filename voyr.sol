@@ -745,7 +745,7 @@ contract VOYR_Token is Context, IERC20, Ownable {
     bool public swapAndLiquifyEnabled = true;
 
     uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
-    uint256 private constant numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+    uint256 private constant numTokensSellToAddToLiquidity = 500 * 10**6 * 10**9;
 
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
